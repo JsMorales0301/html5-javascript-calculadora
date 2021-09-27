@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="calculadora">
+        <div class="container">
+            <div class="row m-5 text-center d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div class="card p-5">
+                        <h2>CALCULADORA BÁSICA </h2>
+                        <form class="m-3">
+                            <div class="form-outline mb-4">
+                              <input type="text" id="numero1" class="form-control" 12/>
+                              <label class="form-label" for="numero1">Número 1</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                              <input type="text" id="numero2" class="form-control" />
+                              <label class="form-label" for="numero2">Número 2</label>
+                            </div>
+                          
+                            <div class="form-outline mb-4">
+                                <input type="text" id="resultado" class="form-control" disabled placeholder="Resultado"/>
+                                <label class="form-label" for="resultado"> </label>
+                            </div>
+    
+                            <button 
+                                type="button" 
+                                class="btn btn-outline-primary mb-4"
+                                onclick="suma()"
+                            >Suma</button>
+                            <button 
+                                type="button" 
+                                class="btn btn-outline-primary mb-4"
+                                onclick="resta()"
+                            >Resta</button>
+                            <button 
+                                type="button" 
+                                class="btn btn-outline-primary mb-4"
+                                onclick="multiplicacion()"
+                            >Producto</button>
+                            <button 
+                                type="button" 
+                                class="btn btn-outline-primary mb-4"
+                                onclick="division()"
+                            >División</button>
+    
+                            <button 
+                                type="reset" 
+                                class="btn btn-outline-danger mb-4"
+                            >Reiniciar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="/javascript/main.js"></script>
+    <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+></script>
+</body>
+</html>
