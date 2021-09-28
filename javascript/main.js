@@ -15,7 +15,11 @@ function calculadora() {
         }
         return 'Error: no se puede dividir entre cero.';
     }
+    else{
+        return 'Error: el operador seleccionado no esta dentro de las opciones.';
+    }
 }
+
 //Forma número 1
 
 function suma() {
@@ -48,18 +52,17 @@ function division() {
     {
         document.getElementById('resultado').value = num_1 / num_2;
     }else{
-        document.getElementById('resultado').value = 'Error: no se puede dividir entre cero.'
+        document.getElementById('resultado').value = 'Error: no se puede dividir entre cero.';
     }
-    
 }
 
 
-let numero_1 = parseInt(prompt('Digite el primer numero: '));
+/* let numero_1 = parseInt(prompt('Digite el primer numero: '));
 let numero_2 = parseInt(prompt('Digite el segundo número: '));
 
-let operacion = prompt('Digite el simbolo de la operación que desea realizar: ');
+let operacion = prompt('Digite el simbolo de la operación que desea realizar (+,-,*,/): ');
 
-alert(calculadora(numero_1, numero_2))
+alert(calculadora(numero_1, numero_2)); */
 
 
 
